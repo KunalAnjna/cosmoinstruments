@@ -58,10 +58,10 @@ counters.forEach(counter => {
 /*------------------------------*/
 const data = [
     {
-        img: "https://i.pravatar.cc/200?img=12",
+        img: "sandeepkumar.jpeg",
         quote: "We develop and optimize application solutions that ensure seamless system integration, reliable performance.",
-        name: "Mr Vipin Yadav",
-        role: "AGM - APPLICATION - 10+ YRS"
+        name: "Mr Sandeep Kumar",
+        role: "Sales Head                                                                                                                                                                                                                                                                                                                                                 - 10+ YRS"
     },
     {
         img: "https://i.pravatar.cc/200?img=32",
@@ -81,6 +81,7 @@ const data = [
         name: "Priya Singh",
         role: "DEVOPS ENGINEER - 7 YRS"
     }
+    
 ];
 
 let index = 0;
