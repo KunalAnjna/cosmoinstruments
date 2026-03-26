@@ -1,10 +1,12 @@
 *{
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    border: border-box;/*
+font-family: Roboto , sans-serif;*/
 }
+/* Header Section*/
 .navbar{
-    height: 80px;
+    height: 10vh;
     background-color:white;
     color: black;
     display: flex;
@@ -14,8 +16,6 @@
     padding: 0 40px;
     position: relative;
     z-index: 1000;
-
-
 }
 .nav-logo{
     height: 100%;
@@ -44,13 +44,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: 20px larger;
+    font: 3vh larger;
     color: black;
     
 }
 .dropdown {
     position: relative;
     cursor: pointer;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* Dropdown menu box */
@@ -60,20 +61,23 @@
     top: 100%;
     left: 0;
     padding-left:2px ;
-    width: 350px;
+    width: 50vh;
     background:white;
     display: none;
     flex-direction: column;
+      font-family: 'Roboto', sans-serif;
 }
 p{  
     font:16px medium;
     text-decoration: none;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* Dropdown items */
 .dropdown-menu p {
     padding: 5px;
     margin: 2px;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* Hover effect */
@@ -106,7 +110,7 @@ a:hover{
     color: red;
 }
 
-/* CSS */
+/* CSS of navbar button */
 button {
   background: #FF4742;
   border: 1px solid #FF4742;
@@ -119,8 +123,8 @@ button {
   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 16px;
   font-weight: 800;
-  line-height: 16px;
-  min-height: 40px;
+  line-height: 2vh;
+  min-height: 3vh;
   outline: 0;
   padding: 12px 14px;
   text-align: center;
@@ -130,6 +134,7 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover,
@@ -142,17 +147,17 @@ button:active {
 button:active {
   opacity: .5;
 }
-.banner {
+/*message.html content*/
+.Team-text{
+    font-size: 40px;
     color: white;
-    height: 250px;
-    background-image: url(ourteam.jpg);
-    background-size: cover;
+    width: 100%;
+    height: 200px;
     display: flex;
-    justify-content: left;
-    align-items: left;
-    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(104,224,251),rgb(20,125,144));
 }
-
 /* MAIN SECTION */
 .director-section {
     display: flex;
@@ -170,6 +175,7 @@ button:active {
     width: 55%;
     position: relative;
     z-index: 2;
+      font-family: 'Roboto', sans-serif;
 }
 
 #large-text {
@@ -177,17 +183,16 @@ button:active {
     font-size:40px;
     font-family:  'Arial Narrow', Arial, sans-serif;
     margin-bottom: -5px;
+      font-family: 'Roboto', sans-serif;
 }
 
 #small-text {
     color: rgb(49, 134, 203);
     font-size: 18px;
     margin-left: 15px;
-  
+      font-family: 'Roboto', sans-serif;
     margin-bottom: 25px;
 }
-
-
 
 .image-box img {
     width: 100%;
@@ -215,6 +220,7 @@ button:active {
     opacity: 0;
     transform: scale(0.85) translateY(40px);
     animation: comeForward 0.8s ease-out forwards;
+      font-family: 'Roboto', sans-serif;
 }
 
 .image-box {
@@ -233,16 +239,28 @@ button:active {
 .image-box {
     animation-delay: 0.4s;
 }
-/* SECTION */
+/* contat page SECTION */
+.contact-text{
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(104,224,251),rgb(20,125,144));
+}
 .contact-section {
     padding: 60px;
     background: #f5f5f5;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* HEADING */
 .contact-section h2 {
     color: #1e6fa3;
     font-size: 32px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .underline {
@@ -257,6 +275,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* BOX */
@@ -268,6 +287,7 @@ button:active {
 }
 .contact-box a{
     margin: 0px;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* ICON */
@@ -283,10 +303,13 @@ button:active {
 .contact-box h3 {
     color: #1e6fa3;
     margin-bottom: 5px;
+      font-family: 'Roboto', sans-serif;
 }
+
 
 .contact-box p {
     color: #333;
+   font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 /* ENQUIRY SECTION */
@@ -338,41 +361,82 @@ button:active {
 }
 
 
-/* HERO */
+/* HERO Section */
+/* HERO SECTION Home page */
 .hero {
     position: relative;
     width: 100%;
-   margin-top: -100px;
-   margin-bottom: 0px;
-    height: calc(100vh - 90px);
+    height: 100vh;
+    color: #000;
     overflow: hidden;
 }
 
-/* SLIDES */
-.slide {
+/* VIDEO */
+.hero-video {
     position: absolute;
     width: 100%;
-    height: 120%;
-    padding: 0px;
-    margin: 0px;
-
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    
-
-    opacity: 0;
-    transition: opacity 1s ease;
+    height: 100%;
+    object-fit: fill;
 }
 
-.slide.active {
-    opacity: 1;
+/* DARK OVERLAY */
+.overlay-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 133, 177, 0.4);
 }
 
-/* SECTION */
+/* CONTENT CENTER */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.9s ease forwards;
+}
+
+/* TEXT STYLING */
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.hero-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    background: #51fbfb;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.hero-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* About SECTION */
 .about {
     display: flex;
     justify-content: space-between;
@@ -384,11 +448,13 @@ button:active {
 /* LEFT TEXT */
 .about-text {
     width: 50%;
+      font-family: 'Roboto', sans-serif;
 }
 
 .about-text h2 {
     font-size: 40px;
     margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .underline {
@@ -403,8 +469,10 @@ button:active {
     line-height: 1.7;
     margin-bottom: 15px;
     color: #333;
+    font-family: 'Roboto', sans-serif;
 }
 .about-text h3{
+      font-family: 'Roboto', sans-serif;
     margin-bottom: 3px;
 }
 
@@ -416,6 +484,7 @@ button:active {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+      font-family: 'Roboto', sans-serif;
 }
 #moreText {
     transition: all 0.5s ease;
@@ -452,7 +521,7 @@ button:active {
 
 /* LEFT IMAGE */
 .img1 {
-    border:5px solid white;
+
     margin-bottom: 100px;
     transform: translateX(-150px);
     z-index: 2;
@@ -461,10 +530,11 @@ button:active {
 
 /* RIGHT IMAGE */
 .img2 {
-     border:5px solid white;
+   background-color: #000;
     margin-top: 50px;
     transform: translateX(150px);
     z-index: 1;
+    border:2px solid red;
 }
 
 /* SHOW CLASS (AFTER LOAD) */
@@ -473,7 +543,7 @@ button:active {
     transform: translateX(0);
 }
 
-/*quotesection*/
+/*stats section*/
 
 .stats {
     color:white;
@@ -527,13 +597,15 @@ button:active {
 .stat-box p {
   font-size: 16px;
   margin-top: 5px;
+
 }
 
-/*products*/
+/*products  section*/
 .products h1{
     display: flex;
     justify-content: center;
     align-items: center;
+      font-family: 'Roboto', sans-serif;
 }
 .underlin{
    width: 70px;
@@ -546,22 +618,13 @@ button:active {
     width: 100%;
     height: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 5px;
 }
-@keyframes comeForward {
-    0% {
-        opacity: 0;
-        transform: scale(0.85) translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
-}
+
 .air{
     height: 300px;
-   
+   width: 27%;
     transform: scale(0.85) translateY(40px);
     animation: comeForward 0.8s ease-out forwards;
 
@@ -588,7 +651,7 @@ button:active {
     border-radius: 8px;
     left: 0;
     bottom: 0;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -613,24 +676,26 @@ button:active {
     text-align: justify;
 }
 
-.layer i {
-    color: #0ef;
+#layerlogo {
+    color: rgb(0, 0, 0);
     margin-top: 20px;
     font-size: 20px;
-    background: #000;
+    background: #ffffff;
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    font-size: larger;
+    font-weight: 600;
 }
 .air:hover img {
     transform: scale(1.01);
 }
 
 .air:hover .layer {
-    height: 100%;
+    height: 90%;
     opacity: 1;
 }
 #productbtn {
@@ -650,8 +715,7 @@ button:active {
     margin-top: 5px;
     background-color:  #f8f8f8;
 }
-/* Responsive *
-}
+
 /* ===== PARTNER SLIDER (NO CONFLICT) ===== */
 
 .partner-slider {
@@ -664,7 +728,7 @@ button:active {
 
 .partner-track {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     justify-content: center;
     width: max-content;
     animation: partnerScroll 10s linear infinite;
@@ -709,7 +773,7 @@ button:active {
 .partner-track:hover {
     animation-play-state: paused;
 }
-
+/*Team Section*/
 
 
 .team{
@@ -751,11 +815,13 @@ button:active {
 .team-content h1{
     font-size:32px;
     margin-bottom:15px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .team-content h1 span{
     color: rgb(16, 173, 194);
     border-bottom:3px solid rgb(16, 173, 194);
+      font-family: 'Roboto', sans-serif;
 }
 
 .team-content p{
@@ -764,15 +830,18 @@ button:active {
     margin-bottom:20px;
     color:#ddd;
     max-width:500px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .team-content h2{
     font-size:24px;
+      font-family: 'Roboto', sans-serif;
 }
 
 .team-content h4{
     color: rgb(16, 173, 194);
     margin-top:5px;
+      font-family: 'Roboto', sans-serif;
 }
 
 /* DOTS */
@@ -803,7 +872,7 @@ button:active {
         text-align:center;
     }
 }
-
+/*experts contact section*/
 .contacte{
     height: 800px;
     background: white;
@@ -918,6 +987,16 @@ button:active {
     }
 }
 /*products page*/
+.products-text{
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(104,224,251),rgb(20,125,144));
+}
 .shop-section{
     display: flex;
     flex-wrap: wrap;
@@ -954,7 +1033,8 @@ button:active {
   background-size: contain;
     background-repeat: no-repeat;
 
-}.pdtimages2{
+}
+.pdtimages2{
   width: 40%;
   height: 40%;
   background-color: white;
@@ -963,7 +1043,8 @@ button:active {
   background-size: contain;
     background-repeat: no-repeat;
 
-}.pdtimages3{
+}
+.pdtimages3{
   width: 40%;
   height: 40%;
   background-color: white;
@@ -979,9 +1060,9 @@ width: 30%;
 background-color: white;
 padding: 20px 0px 15px;
 margin-top: 1rem;
-    border: 10px solid rgb(93, 229, 234);
+    border: 10px solid #0092E5;
 
-  box-shadow: inset 0 -86px 0 rgb(93, 229, 234);
+  box-shadow: inset 0 -86px 0 #0092E5;
 
 }
 .products-main{
@@ -1012,6 +1093,7 @@ margin-top: 1rem;
 }
 /* CONTAINER */
 .footer-container {
+     
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -1027,6 +1109,7 @@ margin-top: 1rem;
     font-size: 22px;
     margin-bottom: 15px;
     position: relative;
+     font-family: 'Roboto', sans-serif;
 }
 
 /* underline */
@@ -1038,6 +1121,7 @@ margin-top: 1rem;
     position: absolute;
     bottom: -5px;
     left: 0;
+     font-family: 'Roboto', sans-serif;
 }
 
 /* LINKS */
@@ -1047,6 +1131,7 @@ margin-top: 1rem;
     margin: 8px 0;
     text-decoration: none;
     font-size: 14px;
+     font-family: 'Roboto', sans-serif;
 }
 
 .footer-col a:hover {
@@ -1058,6 +1143,7 @@ margin-top: 1rem;
     font-size: 14px;
     margin-bottom: 10px;
     color: #ccc;
+     font-family: 'Roboto', sans-serif;
 }
 
 /* SOCIAL ICONS */
@@ -1084,6 +1170,7 @@ margin-top: 1rem;
     font-size: 14px;
     color: #aaa;
 }
+/*client page*/
 .client-text{
     font-size: 40px;
     color: white;
@@ -1248,6 +1335,82 @@ margin-top: 1rem;
 .client:hover {
     transform: translateY(-5px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
